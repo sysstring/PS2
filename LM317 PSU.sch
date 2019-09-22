@@ -78,7 +78,7 @@ F 1 "10K LIN" H 2830 7255 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 2900 7300 50  0001 C CNN
 F 3 "~" H 2900 7300 50  0001 C CNN
 	1    2900 7300
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_POT RV2
@@ -89,7 +89,7 @@ F 1 "10K LIN" H 4280 7005 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 4350 7050 50  0001 C CNN
 F 3 "~" H 4350 7050 50  0001 C CNN
 	1    4350 7050
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C5
