@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:LM317 PSU-cache
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -28,24 +28,24 @@ $EndComp
 $Comp
 L Amplifier_Operational:LM358 U3
 U 1 1 5D60E780
-P 5600 3650
-F 0 "U3" H 5700 3350 50  0000 C CNN
-F 1 "LM358" H 5700 3450 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 5600 3650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5600 3650 50  0001 C CNN
-	1    5600 3650
-	-1   0    0    1   
+P 7750 4150
+F 0 "U3" H 7850 3850 50  0000 C CNN
+F 1 "LM358" H 7850 3950 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7750 4150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 7750 4150 50  0001 C CNN
+	1    7750 4150
+	1    0    0    -1  
 $EndComp
 $Comp
 L Amplifier_Operational:LM358 U5
 U 2 1 5D60E787
-P 7750 4150
-F 0 "U5" H 7750 4517 50  0000 C CNN
-F 1 "LM358" H 7750 4426 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 7750 4150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 7750 4150 50  0001 C CNN
-	2    7750 4150
-	1    0    0    -1  
+P 5600 3650
+F 0 "U5" H 5600 4017 50  0000 C CNN
+F 1 "LM358" H 5600 3926 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5600 3650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5600 3650 50  0001 C CNN
+	2    5600 3650
+	-1   0    0    1   
 $EndComp
 $Comp
 L Regulator_Linear:LM317_3PinPackage U4
@@ -239,23 +239,12 @@ Text Label 2200 6850 0    50   ~ 0
 $Comp
 L power:+12V #PWR03
 U 1 1 5D617DD3
-P 1450 1700
-F 0 "#PWR03" H 1450 1550 50  0001 C CNN
-F 1 "+12V" V 1465 1828 50  0000 L CNN
-F 2 "" H 1450 1700 50  0001 C CNN
-F 3 "" H 1450 1700 50  0001 C CNN
-	1    1450 1700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+12V #PWR02
-U 1 1 5D618543
-P 1000 6850
-F 0 "#PWR02" H 1000 6700 50  0001 C CNN
-F 1 "+12V" V 1015 6978 50  0000 L CNN
-F 2 "" H 1000 6850 50  0001 C CNN
-F 3 "" H 1000 6850 50  0001 C CNN
-	1    1000 6850
+P 1150 1700
+F 0 "#PWR03" H 1150 1550 50  0001 C CNN
+F 1 "+12V" V 1165 1828 50  0000 L CNN
+F 2 "" H 1150 1700 50  0001 C CNN
+F 3 "" H 1150 1700 50  0001 C CNN
+	1    1150 1700
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -405,17 +394,6 @@ Wire Wire Line
 	3550 6000 3550 6100
 Wire Wire Line
 	4350 5550 4250 5550
-$Comp
-L power:+12V #PWR015
-U 1 1 5D669E26
-P 4350 5550
-F 0 "#PWR015" H 4350 5400 50  0001 C CNN
-F 1 "+12V" V 4450 5450 50  0000 L CNN
-F 2 "" H 4350 5550 50  0001 C CNN
-F 3 "" H 4350 5550 50  0001 C CNN
-	1    4350 5550
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3950 6400 3950 6450
 $Comp
@@ -553,32 +531,10 @@ Wire Notes Line
 	550  6600 3000 6600
 Text Notes 600  7700 0    50   ~ 0
 Front panel, Controls and V_ref\n
-$Comp
-L Amplifier_Operational:TL061 U2
-U 1 1 5D77F441
-P 3450 2500
-F 0 "U2" H 3791 2546 50  0000 L CNN
-F 1 "TL061" H 3791 2455 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 3500 2550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 3600 2650 50  0001 C CNN
-	1    3450 2500
-	1    0    0    -1  
-$EndComp
 Connection ~ 4450 1700
 Connection ~ 2700 1700
 Wire Wire Line
 	3750 2500 3750 3100
-$Comp
-L power:+12V #PWR012
-U 1 1 5D7E5645
-P 3500 2200
-F 0 "#PWR012" H 3500 2050 50  0001 C CNN
-F 1 "+12V" V 3515 2328 50  0000 L CNN
-F 2 "" H 3500 2200 50  0001 C CNN
-F 3 "" H 3500 2200 50  0001 C CNN
-	1    3500 2200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3500 2200 3350 2200
 $Comp
@@ -594,30 +550,8 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 1500 5500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1500 5100 1500 5050
-$Comp
-L power:+12V #PWR04
-U 1 1 5D7FEF3C
-P 1500 5050
-F 0 "#PWR04" H 1500 4900 50  0001 C CNN
-F 1 "+12V" V 1600 5000 50  0000 L CNN
-F 2 "" H 1500 5050 50  0001 C CNN
-F 3 "" H 1500 5050 50  0001 C CNN
-	1    1500 5050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1000 5700 900  5700
-$Comp
-L power:+12V #PWR01
-U 1 1 5D8077DD
-P 900 5700
-F 0 "#PWR01" H 900 5550 50  0001 C CNN
-F 1 "+12V" V 915 5828 50  0000 L CNN
-F 2 "" H 900 5700 50  0001 C CNN
-F 3 "" H 900 5700 50  0001 C CNN
-	1    900  5700
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1500 5900 1500 5950
 $Comp
@@ -819,31 +753,9 @@ F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4300 3650 50  
 	1    4300 3650
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+12V #PWR028
-U 1 1 5DA26445
-P 9900 5700
-F 0 "#PWR028" H 9900 5550 50  0001 C CNN
-F 1 "+12V" V 9915 5828 50  0000 L CNN
-F 2 "" H 9900 5700 50  0001 C CNN
-F 3 "" H 9900 5700 50  0001 C CNN
-	1    9900 5700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	9900 5700 9800 5700
 Connection ~ 9800 5700
-$Comp
-L power:+12V #PWR030
-U 1 1 5DA43960
-P 10800 5700
-F 0 "#PWR030" H 10800 5550 50  0001 C CNN
-F 1 "+12V" V 10815 5828 50  0000 L CNN
-F 2 "" H 10800 5700 50  0001 C CNN
-F 3 "" H 10800 5700 50  0001 C CNN
-	1    10800 5700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	10800 5700 10700 5700
 Connection ~ 10700 5700
@@ -877,7 +789,6 @@ F 3 "~" H 3350 2050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3350 2200 3350 2150
-Connection ~ 3350 2200
 Wire Wire Line
 	3350 1950 3350 1900
 Wire Wire Line
@@ -911,11 +822,11 @@ F 3 "" H 4250 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	11200 5650 11200 6500
+	11200 5600 11200 6500
 Wire Notes Line
-	9250 5650 11200 5650
+	9250 5600 11200 5600
 Wire Notes Line
-	9250 6500 9250 5650
+	9250 6500 9250 5600
 $Comp
 L Device:Voltmeter_DC MES2
 U 1 1 5DBA34EF
@@ -1158,69 +1069,58 @@ Connection ~ 5350 1700
 Wire Wire Line
 	5350 1700 5500 1700
 $Comp
-L Mechanical:MountingHole MH1
-U 1 1 5D92FB5C
-P 9800 4500
-F 0 "MH1" H 9900 4546 50  0000 L CNN
-F 1 "MountingHole" H 9900 4455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9800 4500 50  0001 C CNN
-F 3 "~" H 9800 4500 50  0001 C CNN
-	1    9800 4500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole MH2
 U 1 1 5D92FD6F
-P 9800 4700
-F 0 "MH2" H 9900 4746 50  0000 L CNN
-F 1 "MountingHole" H 9900 4655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9800 4700 50  0001 C CNN
-F 3 "~" H 9800 4700 50  0001 C CNN
-	1    9800 4700
+P 9850 4400
+F 0 "MH2" H 9950 4446 50  0000 L CNN
+F 1 "MountingHole" H 9950 4355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9850 4400 50  0001 C CNN
+F 3 "~" H 9850 4400 50  0001 C CNN
+	1    9850 4400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole MH3
 U 1 1 5D9373BC
-P 9800 4900
-F 0 "MH3" H 9900 4946 50  0000 L CNN
-F 1 "MountingHole" H 9900 4855 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9800 4900 50  0001 C CNN
-F 3 "~" H 9800 4900 50  0001 C CNN
-	1    9800 4900
+P 9850 4600
+F 0 "MH3" H 9950 4646 50  0000 L CNN
+F 1 "MountingHole" H 9950 4555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9850 4600 50  0001 C CNN
+F 3 "~" H 9850 4600 50  0001 C CNN
+	1    9850 4600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole MH4
 U 1 1 5D93EA04
-P 9800 5100
-F 0 "MH4" H 9900 5146 50  0000 L CNN
-F 1 "MountingHole" H 9900 5055 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9800 5100 50  0001 C CNN
-F 3 "~" H 9800 5100 50  0001 C CNN
-	1    9800 5100
+P 9850 4800
+F 0 "MH4" H 9950 4846 50  0000 L CNN
+F 1 "MountingHole" H 9950 4755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9850 4800 50  0001 C CNN
+F 3 "~" H 9850 4800 50  0001 C CNN
+	1    9850 4800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole MH5
 U 1 1 5D94604D
-P 10650 4500
-F 0 "MH5" H 10750 4546 50  0000 L CNN
-F 1 "MountingHole" H 10750 4455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10650 4500 50  0001 C CNN
-F 3 "~" H 10650 4500 50  0001 C CNN
-	1    10650 4500
+P 10700 4200
+F 0 "MH5" H 10800 4246 50  0000 L CNN
+F 1 "MountingHole" H 10800 4155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10700 4200 50  0001 C CNN
+F 3 "~" H 10700 4200 50  0001 C CNN
+	1    10700 4200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole MH8
 U 1 1 5D94D691
-P 10650 5100
-F 0 "MH8" H 10750 5146 50  0000 L CNN
-F 1 "MountingHole" H 10750 5055 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10650 5100 50  0001 C CNN
-F 3 "~" H 10650 5100 50  0001 C CNN
-	1    10650 5100
+P 9850 4200
+F 0 "MH8" H 9950 4246 50  0000 L CNN
+F 1 "MountingHole" H 9950 4155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9850 4200 50  0001 C CNN
+F 3 "~" H 9850 4200 50  0001 C CNN
+	1    9850 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1455,25 +1355,14 @@ Connection ~ 2050 5700
 Wire Wire Line
 	2050 5700 2100 5700
 $Comp
-L Mechanical:MountingHole MH7
-U 1 1 5D91AAA5
-P 10650 4900
-F 0 "MH7" H 10750 4946 50  0000 L CNN
-F 1 "MountingHole" H 10750 4855 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10650 4900 50  0001 C CNN
-F 3 "~" H 10650 4900 50  0001 C CNN
-	1    10650 4900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole MH6
 U 1 1 5D91AD4A
-P 10650 4700
-F 0 "MH6" H 10750 4746 50  0000 L CNN
-F 1 "MountingHole" H 10750 4655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10650 4700 50  0001 C CNN
-F 3 "~" H 10650 4700 50  0001 C CNN
-	1    10650 4700
+P 10700 4400
+F 0 "MH6" H 10800 4446 50  0000 L CNN
+F 1 "MountingHole" H 10800 4355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10700 4400 50  0001 C CNN
+F 3 "~" H 10700 4400 50  0001 C CNN
+	1    10700 4400
 	1    0    0    -1  
 $EndComp
 Text GLabel 5750 7450 2    50   Input ~ 0
@@ -1505,17 +1394,45 @@ Wire Wire Line
 $Comp
 L Device:Fuse F1
 U 1 1 5D8B78FD
-P 1750 1700
-F 0 "F1" V 1553 1700 50  0000 C CNN
-F 1 "Fuse" V 1644 1700 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 1680 1700 50  0001 C CNN
-F 3 "~" H 1750 1700 50  0001 C CNN
-	1    1750 1700
+P 1450 1700
+F 0 "F1" V 1253 1700 50  0000 C CNN
+F 1 "Fuse" V 1344 1700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 1380 1700 50  0001 C CNN
+F 3 "~" H 1450 1700 50  0001 C CNN
+	1    1450 1700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2200 1700 1900 1700
-Connection ~ 2200 1700
+	2200 1700 1600 1700
 Wire Wire Line
-	1600 1700 1450 1700
+	1300 1700 1150 1700
+Connection ~ 2200 1700
+Text GLabel 1850 1700 1    50   Input ~ 0
+12V_F
+Text GLabel 3500 2200 2    50   Input ~ 0
+12V_F
+Connection ~ 3350 2200
+$Comp
+L Amplifier_Operational:TL061 U2
+U 1 1 5D77F441
+P 3450 2500
+F 0 "U2" H 3791 2546 50  0000 L CNN
+F 1 "TL061" H 3791 2455 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3500 2550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 3600 2650 50  0001 C CNN
+	1    3450 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 1500 5050 1    50   Input ~ 0
+12V_F
+Text GLabel 900  5700 0    50   Input ~ 0
+12V_F
+Text GLabel 1000 6850 0    50   Input ~ 0
+12V_F
+Text GLabel 4350 5550 2    50   Input ~ 0
+12V_F
+Text GLabel 9900 5700 2    50   Input ~ 0
+12V_F
+Text GLabel 10800 5700 2    50   Input ~ 0
+12V_F
 $EndSCHEMATC
