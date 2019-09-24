@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:LM317 PSU-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Amplifier_Operational:LM358 U5
-U 1 1 5D60E404
-P 7800 2400
-F 0 "U5" H 7800 2800 50  0000 C CNN
-F 1 "LM358" H 7800 2700 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 7800 2400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 7800 2400 50  0001 C CNN
-	1    7800 2400
-	1    0    0    -1  
-$EndComp
 $Comp
 L Amplifier_Operational:LM358 U3
 U 1 1 5D60E780
@@ -56,17 +45,6 @@ F 1 "LM317_3PinPackage" H 4900 1851 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4900 1950 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 4900 1700 50  0001 C CNN
 	1    4900 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NPN_EBC Q1
-U 1 1 5D60E966
-P 8400 2400
-F 0 "Q1" H 8591 2446 50  0000 L CNN
-F 1 "2N2222" H 8591 2355 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92L_Inline_Wide" H 8600 2500 50  0001 C CNN
-F 3 "~" H 8400 2400 50  0001 C CNN
-	1    8400 2400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -168,13 +146,13 @@ $EndComp
 $Comp
 L Amplifier_Operational:LM358 U3
 U 2 1 5D60E4A7
-P 3450 3650
-F 0 "U3" H 3450 3350 50  0000 C CNN
-F 1 "LM358" H 3450 3450 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 3450 3650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 3450 3650 50  0001 C CNN
-	2    3450 3650
-	1    0    0    1   
+P 7800 2400
+F 0 "U3" H 7800 2100 50  0000 C CNN
+F 1 "LM358" H 7800 2200 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7800 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 7800 2400 50  0001 C CNN
+	2    7800 2400
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3150 3550 3100 3550
@@ -323,8 +301,6 @@ Wire Wire Line
 	4650 6850 4350 6850
 Connection ~ 4350 6850
 Wire Wire Line
-	8200 2400 8100 2400
-Wire Wire Line
 	8500 2600 8500 2700
 Wire Wire Line
 	8500 2700 7500 2700
@@ -411,7 +387,7 @@ Wire Notes Line
 	9100 3600 9100 4550
 Wire Notes Line
 	9100 4550 6850 4550
-Text Notes 7600 4500 0    50   ~ 0
+Text Notes 6900 4500 0    50   ~ 0
 CC/CV Indicator
 $Comp
 L Amplifier_Operational:LM358 U5
@@ -641,17 +617,6 @@ F 3 "~" H 2000 5050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2100 5500 2050 5500
-$Comp
-L power:+12V #PWR07
-U 1 1 5D87E937
-P 2450 5500
-F 0 "#PWR07" H 2450 5350 50  0001 C CNN
-F 1 "+12V" V 2450 5650 50  0000 L CNN
-F 2 "" H 2450 5500 50  0001 C CNN
-F 3 "" H 2450 5500 50  0001 C CNN
-	1    2450 5500
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2400 5500 2450 5500
 Wire Wire Line
@@ -1102,17 +1067,6 @@ F 3 "~" H 9850 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole MH5
-U 1 1 5D94604D
-P 10700 4200
-F 0 "MH5" H 10800 4246 50  0000 L CNN
-F 1 "MountingHole" H 10800 4155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10700 4200 50  0001 C CNN
-F 3 "~" H 10700 4200 50  0001 C CNN
-	1    10700 4200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole MH8
 U 1 1 5D94D691
 P 9850 4200
@@ -1354,17 +1308,6 @@ Wire Wire Line
 Connection ~ 2050 5700
 Wire Wire Line
 	2050 5700 2100 5700
-$Comp
-L Mechanical:MountingHole MH6
-U 1 1 5D91AD4A
-P 10700 4400
-F 0 "MH6" H 10800 4446 50  0000 L CNN
-F 1 "MountingHole" H 10800 4355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10700 4400 50  0001 C CNN
-F 3 "~" H 10700 4400 50  0001 C CNN
-	1    10700 4400
-	1    0    0    -1  
-$EndComp
 Text GLabel 5750 7450 2    50   Input ~ 0
 I_FB
 Text GLabel 3100 3550 0    50   Input ~ 0
@@ -1435,4 +1378,187 @@ Text GLabel 9900 5700 2    50   Input ~ 0
 12V_F
 Text GLabel 10800 5700 2    50   Input ~ 0
 12V_F
+Text GLabel 8700 5700 0    50   Input ~ 0
+12V_F
+Wire Wire Line
+	8800 5700 8700 5700
+Wire Wire Line
+	8700 5700 8700 5500
+Wire Wire Line
+	8700 5500 8800 5500
+Wire Wire Line
+	8800 5400 8350 5400
+Wire Wire Line
+	8350 5400 8350 5800
+Wire Wire Line
+	8350 5800 8800 5800
+Text GLabel 8350 5800 0    50   Input ~ 0
+2V5
+Wire Wire Line
+	8800 5900 8100 5900
+Wire Wire Line
+	8100 5900 8100 5300
+Wire Wire Line
+	8100 5300 8800 5300
+Text GLabel 8100 5900 0    50   Input ~ 0
+V_SET
+Wire Wire Line
+	8800 6000 7800 6000
+Wire Wire Line
+	7800 6000 7800 5200
+Wire Wire Line
+	7800 5200 8800 5200
+Text GLabel 7800 6000 0    50   Input ~ 0
+I_SET
+Wire Wire Line
+	8800 6100 7500 6100
+Wire Wire Line
+	7500 6100 7500 5100
+Wire Wire Line
+	7500 5100 8800 5100
+Text GLabel 7500 6100 0    50   Input ~ 0
+I_FB
+Wire Wire Line
+	8800 6200 7250 6200
+Wire Wire Line
+	7250 6200 7250 5000
+Wire Wire Line
+	7250 5000 8800 5000
+$Comp
+L Connector:Conn_01x07_Female J5
+U 1 1 5DA074DC
+P 9000 6000
+F 0 "J5" H 9028 6026 50  0000 L CNN
+F 1 "Conn_01x07_Female" V 9150 5700 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 9000 6000 50  0001 C CNN
+F 3 "~" H 9000 6000 50  0001 C CNN
+	1    9000 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x07_Male J4
+U 1 1 5DA08CB6
+P 9000 5200
+F 0 "J4" H 8972 5132 50  0000 R CNN
+F 1 "Conn_01x07_Male" H 8972 5223 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 9000 5200 50  0001 C CNN
+F 3 "~" H 9000 5200 50  0001 C CNN
+	1    9000 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8800 6300 8650 6300
+Wire Wire Line
+	8800 4900 8650 4900
+$Comp
+L power:GNDA #PWR0101
+U 1 1 5DA1C910
+P 8650 6300
+F 0 "#PWR0101" H 8650 6050 50  0001 C CNN
+F 1 "GNDA" V 8655 6172 50  0000 R CNN
+F 2 "" H 8650 6300 50  0001 C CNN
+F 3 "" H 8650 6300 50  0001 C CNN
+	1    8650 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR0102
+U 1 1 5DA1CE82
+P 8650 4900
+F 0 "#PWR0102" H 8650 4650 50  0001 C CNN
+F 1 "GNDA" V 8655 4772 50  0000 R CNN
+F 2 "" H 8650 4900 50  0001 C CNN
+F 3 "" H 8650 4900 50  0001 C CNN
+	1    8650 4900
+	0    1    1    0   
+$EndComp
+Text GLabel 7250 6200 0    50   Input ~ 0
+LED
+Text GLabel 2450 5500 2    50   Input ~ 0
+12V_F
+Wire Wire Line
+	8200 2400 8100 2400
+$Comp
+L Device:Q_NPN_EBC Q1
+U 1 1 5D60E966
+P 8400 2400
+F 0 "Q1" H 8591 2446 50  0000 L CNN
+F 1 "2N2222" H 8591 2355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline_Wide" H 8600 2500 50  0001 C CNN
+F 3 "~" H 8400 2400 50  0001 C CNN
+	1    8400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U5
+U 1 1 5D60E404
+P 3450 3650
+F 0 "U5" H 3450 4050 50  0000 C CNN
+F 1 "LM358" H 3450 3950 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3450 3650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 3450 3650 50  0001 C CNN
+	1    3450 3650
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J6
+U 1 1 5DB99661
+P 6300 5100
+F 0 "J6" H 6328 5126 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 6328 5035 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D3.50mm_Drill1.4mm_Beaded" H 6300 5100 50  0001 C CNN
+F 3 "~" H 6300 5100 50  0001 C CNN
+	1    6300 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 5100 5950 5100
+Text GLabel 5950 5100 0    50   Input ~ 0
+OUTPUT
+$Comp
+L Mechanical:MountingHole MH1
+U 1 1 5DBE0DC6
+P 10600 4600
+F 0 "MH1" H 10700 4646 50  0000 L CNN
+F 1 "MountingHole" H 10700 4555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10600 4600 50  0001 C CNN
+F 3 "~" H 10600 4600 50  0001 C CNN
+	1    10600 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH5
+U 1 1 5DBE13FA
+P 10600 4800
+F 0 "MH5" H 10700 4846 50  0000 L CNN
+F 1 "MountingHole" H 10700 4755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10600 4800 50  0001 C CNN
+F 3 "~" H 10600 4800 50  0001 C CNN
+	1    10600 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J7
+U 1 1 5DD525BE
+P 6300 4850
+F 0 "J7" H 6328 4876 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 6328 4785 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D3.50mm_Drill1.4mm_Beaded" H 6300 4850 50  0001 C CNN
+F 3 "~" H 6300 4850 50  0001 C CNN
+	1    6300 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4850 5950 4850
+$Comp
+L power:GNDPWR #PWR01
+U 1 1 5DD5CC88
+P 5950 4850
+F 0 "#PWR01" H 5950 4650 50  0001 C CNN
+F 1 "GNDPWR" H 5954 4696 50  0000 C CNN
+F 2 "" H 5950 4800 50  0001 C CNN
+F 3 "" H 5950 4800 50  0001 C CNN
+	1    5950 4850
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
