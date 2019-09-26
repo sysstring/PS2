@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:LM317 PSU-cache
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -147,8 +147,8 @@ $Comp
 L Amplifier_Operational:LM358 U3
 U 2 1 5D60E4A7
 P 7800 2400
-F 0 "U3" H 7800 2100 50  0000 C CNN
-F 1 "LM358" H 7800 2200 50  0000 C CNN
+F 0 "U3" H 7850 2550 50  0000 C CNN
+F 1 "LM358" H 7800 2650 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 7800 2400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 7800 2400 50  0001 C CNN
 	2    7800 2400
@@ -608,12 +608,12 @@ $Comp
 L Device:C_Small C2
 U 1 1 5D84CB66
 P 2000 5050
-F 0 "C2" H 2092 5096 50  0000 L CNN
-F 1 "100u 16V" H 2092 5005 50  0000 L CNN
+F 0 "C2" H 1650 5100 50  0000 L CNN
+F 1 "100u 16V" H 1550 5000 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P3.50mm" H 2000 5050 50  0001 C CNN
 F 3 "~" H 2000 5050 50  0001 C CNN
 	1    2000 5050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	2100 5500 2050 5500
@@ -657,9 +657,9 @@ Wire Wire Line
 Wire Wire Line
 	2300 4300 2500 4300
 Wire Wire Line
-	2000 4300 1650 4300
+	2000 4300 1850 4300
 Connection ~ 2000 4300
-Text GLabel 1650 4300 0    50   Input ~ 0
+Text GLabel 1300 3900 3    50   Input ~ 0
 V-
 Text GLabel 3450 2950 2    50   Input ~ 0
 V-
@@ -1036,45 +1036,45 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole MH2
 U 1 1 5D92FD6F
-P 9850 4400
-F 0 "MH2" H 9950 4446 50  0000 L CNN
-F 1 "MountingHole" H 9950 4355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9850 4400 50  0001 C CNN
-F 3 "~" H 9850 4400 50  0001 C CNN
-	1    9850 4400
+P 9700 4950
+F 0 "MH2" H 9800 4996 50  0000 L CNN
+F 1 "MountingHole" H 9800 4905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9700 4950 50  0001 C CNN
+F 3 "~" H 9700 4950 50  0001 C CNN
+	1    9700 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole MH3
 U 1 1 5D9373BC
-P 9850 4600
-F 0 "MH3" H 9950 4646 50  0000 L CNN
-F 1 "MountingHole" H 9950 4555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9850 4600 50  0001 C CNN
-F 3 "~" H 9850 4600 50  0001 C CNN
-	1    9850 4600
+P 9700 5150
+F 0 "MH3" H 9800 5196 50  0000 L CNN
+F 1 "MountingHole" H 9800 5105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9700 5150 50  0001 C CNN
+F 3 "~" H 9700 5150 50  0001 C CNN
+	1    9700 5150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole MH4
 U 1 1 5D93EA04
-P 9850 4800
-F 0 "MH4" H 9950 4846 50  0000 L CNN
-F 1 "MountingHole" H 9950 4755 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9850 4800 50  0001 C CNN
-F 3 "~" H 9850 4800 50  0001 C CNN
-	1    9850 4800
+P 9700 5350
+F 0 "MH4" H 9800 5396 50  0000 L CNN
+F 1 "MountingHole" H 9800 5305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9700 5350 50  0001 C CNN
+F 3 "~" H 9700 5350 50  0001 C CNN
+	1    9700 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole MH8
 U 1 1 5D94D691
-P 9850 4200
-F 0 "MH8" H 9950 4246 50  0000 L CNN
-F 1 "MountingHole" H 9950 4155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9850 4200 50  0001 C CNN
-F 3 "~" H 9850 4200 50  0001 C CNN
-	1    9850 4200
+P 9700 4750
+F 0 "MH8" H 9800 4796 50  0000 L CNN
+F 1 "MountingHole" H 9800 4705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9700 4750 50  0001 C CNN
+F 3 "~" H 9700 4750 50  0001 C CNN
+	1    9700 4750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1429,7 +1429,7 @@ L Connector:Conn_01x07_Female J5
 U 1 1 5DA074DC
 P 9000 6000
 F 0 "J5" H 9028 6026 50  0000 L CNN
-F 1 "Conn_01x07_Female" V 9150 5700 50  0000 L CNN
+F 1 "Conn_01x07_Female" V 9150 5600 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 9000 6000 50  0001 C CNN
 F 3 "~" H 9000 6000 50  0001 C CNN
 	1    9000 6000
@@ -1440,7 +1440,7 @@ L Connector:Conn_01x07_Male J4
 U 1 1 5DA08CB6
 P 9000 5200
 F 0 "J4" H 8972 5132 50  0000 R CNN
-F 1 "Conn_01x07_Male" H 8972 5223 50  0000 R CNN
+F 1 "Conn_01x07_Male" V 8850 5450 50  0001 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 9000 5200 50  0001 C CNN
 F 3 "~" H 9000 5200 50  0001 C CNN
 	1    9000 5200
@@ -1503,62 +1503,151 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Female J6
 U 1 1 5DB99661
-P 6300 5100
-F 0 "J6" H 6328 5126 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 6328 5035 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Loop_D3.50mm_Drill1.4mm_Beaded" H 6300 5100 50  0001 C CNN
-F 3 "~" H 6300 5100 50  0001 C CNN
-	1    6300 5100
+P 6700 5050
+F 0 "J6" H 6728 5076 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 6728 4985 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D3.50mm_Drill1.4mm_Beaded" H 6700 5050 50  0001 C CNN
+F 3 "~" H 6700 5050 50  0001 C CNN
+	1    6700 5050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 5100 5950 5100
-Text GLabel 5950 5100 0    50   Input ~ 0
+	6500 5050 6350 5050
+Text GLabel 6350 5050 0    50   Input ~ 0
 OUTPUT
 $Comp
 L Mechanical:MountingHole MH1
 U 1 1 5DBE0DC6
-P 10600 4600
-F 0 "MH1" H 10700 4646 50  0000 L CNN
-F 1 "MountingHole" H 10700 4555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10600 4600 50  0001 C CNN
-F 3 "~" H 10600 4600 50  0001 C CNN
-	1    10600 4600
+P 10450 5150
+F 0 "MH1" H 10550 5196 50  0000 L CNN
+F 1 "MountingHole" H 10550 5105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10450 5150 50  0001 C CNN
+F 3 "~" H 10450 5150 50  0001 C CNN
+	1    10450 5150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole MH5
 U 1 1 5DBE13FA
-P 10600 4800
-F 0 "MH5" H 10700 4846 50  0000 L CNN
-F 1 "MountingHole" H 10700 4755 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10600 4800 50  0001 C CNN
-F 3 "~" H 10600 4800 50  0001 C CNN
-	1    10600 4800
+P 10450 5350
+F 0 "MH5" H 10550 5396 50  0000 L CNN
+F 1 "MountingHole" H 10550 5305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10450 5350 50  0001 C CNN
+F 3 "~" H 10450 5350 50  0001 C CNN
+	1    10450 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J7
 U 1 1 5DD525BE
-P 6300 4850
-F 0 "J7" H 6328 4876 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 6328 4785 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Loop_D3.50mm_Drill1.4mm_Beaded" H 6300 4850 50  0001 C CNN
-F 3 "~" H 6300 4850 50  0001 C CNN
-	1    6300 4850
+P 6700 4850
+F 0 "J7" H 6728 4876 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 6728 4785 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D3.50mm_Drill1.4mm_Beaded" H 6700 4850 50  0001 C CNN
+F 3 "~" H 6700 4850 50  0001 C CNN
+	1    6700 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 4850 5950 4850
+	6500 4850 6350 4850
 $Comp
 L power:GNDPWR #PWR01
 U 1 1 5DD5CC88
-P 5950 4850
-F 0 "#PWR01" H 5950 4650 50  0001 C CNN
-F 1 "GNDPWR" H 5954 4696 50  0000 C CNN
-F 2 "" H 5950 4800 50  0001 C CNN
-F 3 "" H 5950 4800 50  0001 C CNN
-	1    5950 4850
+P 6350 4850
+F 0 "#PWR01" H 6350 4650 50  0001 C CNN
+F 1 "GNDPWR" V 6350 4550 50  0000 C CNN
+F 2 "" H 6350 4800 50  0001 C CNN
+F 3 "" H 6350 4800 50  0001 C CNN
+	1    6350 4850
 	0    1    1    0   
 $EndComp
+Wire Notes Line
+	9200 6500 9200 4750
+Wire Notes Line
+	9200 4750 6950 4750
+Wire Notes Line
+	6950 4750 6950 6500
+Wire Notes Line
+	6950 6500 9200 6500
+Text Notes 7000 6450 0    50   ~ 0
+Board to board interconnect
+Wire Notes Line
+	6900 4750 6900 5350
+Wire Notes Line
+	6900 5350 5850 5350
+Wire Notes Line
+	5850 5350 5850 4750
+Wire Notes Line
+	5850 4750 6900 4750
+Text Notes 5900 5300 0    50   ~ 0
+Power connections
+$Comp
+L Regulator_Linear:L7905 U6
+U 1 1 5D91B6EA
+P 1350 4300
+F 0 "U6" H 1700 4350 50  0000 C CNN
+F 1 "L7905" H 1700 4450 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline_Wide" H 1350 4100 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c9/16/86/41/c7/2b/45/f2/CD00000450.pdf/files/CD00000450.pdf/jcr:content/translations/en.CD00000450.pdf" H 1350 4300 50  0001 C CNN
+	1    1350 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1050 3850 1050 4300
+$Comp
+L power:GNDA #PWR02
+U 1 1 5D947008
+P 1300 4700
+F 0 "#PWR02" H 1300 4450 50  0001 C CNN
+F 1 "GNDA" V 1305 4572 50  0000 R CNN
+F 2 "" H 1300 4700 50  0001 C CNN
+F 3 "" H 1300 4700 50  0001 C CNN
+	1    1300 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 4700 1350 4700
+Wire Wire Line
+	1350 4700 1350 4600
+$Comp
+L Device:C_Small C10
+U 1 1 5D9502E1
+P 1700 4400
+F 0 "C10" H 1650 4600 50  0000 L CNN
+F 1 "1u 16V" H 1750 4600 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1700 4400 50  0001 C CNN
+F 3 "~" H 1700 4400 50  0001 C CNN
+	1    1700 4400
+	-1   0    0    1   
+$EndComp
+Connection ~ 1700 4300
+Wire Wire Line
+	1700 4300 1650 4300
+Wire Wire Line
+	1700 4700 1350 4700
+Wire Wire Line
+	1700 4500 1700 4700
+Connection ~ 1350 4700
+$Comp
+L Connector:Conn_01x03_Male J8
+U 1 1 5D95A2D3
+P 1300 3650
+F 0 "J8" V 1360 3790 50  0000 L CNN
+F 1 "V- jumper" V 1451 3790 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 3650 50  0001 C CNN
+F 3 "~" H 1300 3650 50  0001 C CNN
+	1    1300 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 3900 1300 3850
+Wire Wire Line
+	1050 3850 1200 3850
+Wire Wire Line
+	1400 3850 1850 3850
+Wire Wire Line
+	1850 3850 1850 4300
+Connection ~ 1850 4300
+Wire Wire Line
+	1850 4300 1700 4300
 $EndSCHEMATC
