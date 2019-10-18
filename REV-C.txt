@@ -3,21 +3,24 @@ Fix:
 	
 	
 Change:
-	Remove fuse (move to primary side)
+	Remove fuse (moved to primary side)
 	Layout, SMD, (single board with control and display breakout, test points)
 	Single sided layout?
 	
 	Optimize for single quad op-amp
 	Increase input impedence of current sense amp
-	Increase voltage rating of caps (to support 30V input)
-	Change resistor for reference to allow 30V input
-
+	Increase voltage rating of caps (to support 25V input)
+	From single power resistor to SMD array and adjust diff. amp accordingly
+	Supply Vref from 12V rail
+	
 Add:	
 	Decouple negative rail and between rails
 	Output protection (Reverse polarity diode and fuse)
 	Add offset control for current sense amp
 	Filtercap for negative rail (after regulator)
+	Local regulator for 555 (12V) and bypass for lower voltage operation
 
 Test:
 	Shunt regulator instead of -5V regulator
 	Single MOSFET current sink
+	Single MOSFET comparator
